@@ -18,9 +18,13 @@ def analysis(element):
     else:
         return element
 
-for element in numbers:
-    result.append(analysis(element))
 
-print("reasult: ", result)
+def get_result():
+    for element in numbers:
+        result.append(analysis(element))
+    return result
+
+
+# print("result: ", getResult())
 # link to diagram https://drive.google.com/file/d/13Te0CYxa4-k5TP3SpTdmS0rL2lXsp2y8/view?usp=sharing
 
