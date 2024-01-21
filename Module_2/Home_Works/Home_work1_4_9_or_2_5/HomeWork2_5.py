@@ -1,4 +1,4 @@
-from Lesson_2_5.functions import functional_programming as fp
+from Module_2.Lesson_4_9.Lesson_2_5.functions import functional_programming as fp
 from Module_1.Hw2 import hw2_level1 as home1
 
 choice = int(input("enter your choice: \n1) fizzbuzz\n2) square2d\n"))
