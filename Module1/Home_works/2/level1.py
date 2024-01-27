@@ -4,8 +4,6 @@ numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
 result = []
 
 
-
-
 def pure_division(element: int, base: int) -> bool:
     '''
      return true if parameter `element` is divided to `base` without rest.
@@ -25,11 +23,11 @@ def analysis(element: int):
     :param element:  - number that checked
     :return: integer or string
     '''
-    if (pure_division(element, 3) and pure_division(element, 5)):
+    if pure_division(element, 3) and pure_division(element, 5):
         return fizz + buzz
-    elif (pure_division(element, 3) and not pure_division(element, 5)):
+    elif pure_division(element, 3) and not pure_division(element, 5):
         return fizz
-    elif (not pure_division(element, 3) and pure_division(element, 5)):
+    elif not pure_division(element, 3) and pure_division(element, 5):
         return buzz
     else:
         return element
