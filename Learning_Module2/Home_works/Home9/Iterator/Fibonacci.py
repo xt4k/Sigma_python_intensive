@@ -20,7 +20,3 @@ class Fibonacci:
         self.b = a + b
         self.n -= 1
         return a
-
-
-for i in Fibonacci(12):
-    print(i)
