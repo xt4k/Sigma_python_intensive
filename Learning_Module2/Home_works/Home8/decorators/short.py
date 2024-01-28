@@ -1,4 +1,4 @@
-from Learning_Module2.Home_works.Home8.main import short_week_day_names
+from Utils.main import short_week_day_names
 
 
 class short_form:  # short day_name decorator
