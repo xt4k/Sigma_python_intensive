@@ -1,0 +1,27 @@
+2024-02-04 12:33:32,492 INFO | fizz_buzz.py   : 52   | analysis get: `1
+2024-02-04 12:33:32,492 INFO | fizz_buzz.py   : 29   | after division we get: `1
+2024-02-04 12:33:32,492 INFO | fizz_buzz.py   : 31   | pure_division will return: `False
+2024-02-04 12:33:32,492 INFO | fizz_buzz.py   : 29   | after division we get: `1
+2024-02-04 12:33:32,492 INFO | fizz_buzz.py   : 31   | pure_division will return: `False
+2024-02-04 12:33:32,492 INFO | fizz_buzz.py   : 29   | after division we get: `1
+2024-02-04 12:33:32,492 INFO | fizz_buzz.py   : 31   | pure_division will return: `False
+2024-02-04 12:33:32,493 INFO | fizz_buzz.py   : 29   | after division we get: `1
+2024-02-04 12:33:32,493 INFO | fizz_buzz.py   : 31   | pure_division will return: `False
+2024-02-04 12:33:32,493 INFO | fizz_buzz.py   : 52   | analysis get: `3
+2024-02-04 12:33:32,493 INFO | fizz_buzz.py   : 29   | after division we get: `0
+2024-02-04 12:33:32,493 INFO | fizz_buzz.py   : 31   | pure_division will return: `True
+2024-02-04 12:33:32,493 INFO | fizz_buzz.py   : 29   | after division we get: `3
+2024-02-04 12:33:32,493 INFO | fizz_buzz.py   : 31   | pure_division will return: `False
+2024-02-04 12:33:32,493 INFO | fizz_buzz.py   : 29   | after division we get: `0
+2024-02-04 12:33:32,493 INFO | fizz_buzz.py   : 31   | pure_division will return: `True
+2024-02-04 12:33:32,493 INFO | fizz_buzz.py   : 29   | after division we get: `3
+2024-02-04 12:33:32,493 INFO | fizz_buzz.py   : 31   | pure_division will return: `False
+2024-02-04 12:33:32,494 INFO | fizz_buzz.py   : 52   | analysis get: `10
+2024-02-04 12:33:32,494 INFO | fizz_buzz.py   : 29   | after division we get: `1
+2024-02-04 12:33:32,494 INFO | fizz_buzz.py   : 31   | pure_division will return: `False
+2024-02-04 12:33:32,494 INFO | fizz_buzz.py   : 29   | after division we get: `1
+2024-02-04 12:33:32,494 INFO | fizz_buzz.py   : 31   | pure_division will return: `False
+2024-02-04 12:33:32,494 INFO | fizz_buzz.py   : 29   | after division we get: `1
+2024-02-04 12:33:32,494 INFO | fizz_buzz.py   : 31   | pure_division will return: `False
+2024-02-04 12:33:32,494 INFO | fizz_buzz.py   : 29   | after division we get: `0
+2024-02-04 12:33:32,494 INFO | fizz_buzz.py   : 31   | pure_division will return: `True

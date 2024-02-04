@@ -1,0 +1,5 @@
+Vasil Ivanchenko,
+1998,
+30,
+['Python', 'C#', 'Java', 'C++'],
+{3, 12, 5, 7},

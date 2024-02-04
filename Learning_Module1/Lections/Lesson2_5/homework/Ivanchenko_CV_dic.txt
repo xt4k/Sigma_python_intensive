@@ -1,0 +1,5 @@
+0, Vasil Ivanchenko
+1, 1998
+2, 30
+3, ['Python', 'C#', 'Java', 'C++']
+4, {3, 12, 5, 7}

@@ -1,7 +1,6 @@
 
 from Learning_Module1.Lections.Lesson2_5.functions import functional_programming as fp
-from Learning_Module1.Home_works.Home2 import level1
-
+from Learning_Module1.Home_works.Home2 import fizz_buzz as level1
 choice = input("enter your choice: \n1) fizzbuzz\n2) square2d\n")
 
 if choice == "1":

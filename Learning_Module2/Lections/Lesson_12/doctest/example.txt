@@ -1,0 +1,22 @@
+The ```Simple Doc``` module
+========================
+
+Using ``add``
+------------------------
+>>> from simple_doc import add
+>>> add(1,2)
+3
+>>> add(0,0)
+0
+>>> add(3,5)
+8
+
+Using ``division``
+-------------------------
+>>> from simple_doc import division
+>>> division(1, 1)
+1
+>>> division(1, 0)
+Traceback (most recent call last):
+    ...
+ZeroDivisionError: integer division or modulo by zero
