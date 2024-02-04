@@ -13,7 +13,7 @@ testcases:
 '''
 
 import pytest
-from Learning_Module1.Home_works.Home2.fizz_buzz import pure_division
+from Home_works_common.FizBuzz_testing_logging_doctest.fizz_buzz import pure_division
 def test_divided_true():
     assert pure_division(12,3)
 

@@ -1,13 +1,16 @@
+import string
+
 fizz = "Fizz"
 buzz = "Buzz"
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
 result = []
 
-import sys
 import logging
-import Learning_Module2.Home_works.Home10.homework.logger.my_logger as ext_logger
+from Learning_Module2.Home_works.Home10.homework.logger.my_logger import external_logger_function_example as ext_logger
 
-logger = ext_logger.external_logger_function_example()
+logger = ext_logger("log-test.log")
+
+
 def pure_division(element: int, base: int) -> bool:
     '''
      return true if parameter `element` is divided to `base` without rest.
@@ -26,9 +29,8 @@ def pure_division(element: int, base: int) -> bool:
     '''
 
     division_result = element % base
-    logger.info("after division we get: `" + str(division_result))
     return_result = division_result == 0
-    logger.info("pure_division will return: `"+str(return_result))
+    logging.debug("pure_division: `{}`,`{}`->`{}`".format(element, base, return_result))
     return return_result
 
 
@@ -49,22 +51,24 @@ def analysis(element: int):
     8
 
     '''
-    logging.info("analysis get: `"+str(element))
+    returned = None
+
     if pure_division(element, 3) and pure_division(element, 5):
-        return fizz + buzz
+        returned = fizz + buzz
     elif pure_division(element, 3) and not pure_division(element, 5):
-        return fizz
+        returned = fizz
     elif not pure_division(element, 3) and pure_division(element, 5):
-        return buzz
+        returned = buzz
     else:
-        return element
+        returned = element
+    logging.info("analysis: `{}`->`{}`".format(element, returned))
+    return returned
 
 
 def get_result(numbers_list: list == numbers):
-    '''
+    """
     Append to list result processing with analysis() for every element in numbers[]
     :return: list
-
     >>> get_result([1])
     [1]
     >>> get_result([3])
@@ -72,11 +76,8 @@ def get_result(numbers_list: list == numbers):
     >>> get_result([10])
     [1, 'Fizz', 'Buzz']
 
-    '''
-
+    """
     for element in numbers_list:
         result.append(analysis(element))
+    logging.info("get_result: `{}`".format(result))
     return result
-
-# print("result: ", getResult())
-# link to diagram https://drive.google.com/file/d/13Te0CYxa4-k5TP3SpTdmS0rL2lXsp2y8/view?usp=sharing

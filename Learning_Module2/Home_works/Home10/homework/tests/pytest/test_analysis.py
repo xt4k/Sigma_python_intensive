@@ -1,5 +1,10 @@
 import pytest
-from Learning_Module1.Home_works.Home2.fizz_buzz import analysis
+from Home_works_common.FizBuzz_testing_logging_doctest.fizz_buzz import analysis
+from Learning_Module2.Home_works.Home10.homework.logger.my_logger import external_logger_function_example as ext_logger
+
+logger = ext_logger("logg111")
+
+logger.info("pytetst11111122222")
 
 fizz = "Fizz"
 buzz = "Buzz"
@@ -30,6 +35,7 @@ def test_buzz():
 
 
 def test_element():
+    logger.info("analysis(7): `{}`".format(analysis(7)))
     assert analysis(7) == 7
 
 

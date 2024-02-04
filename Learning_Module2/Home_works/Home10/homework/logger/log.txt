@@ -1,5 +1,0 @@
-DEBUG | logger_example.py: 71   | This will be visible only for developers 10 %(levelname)s | %(filename)-15s: %(lineno)-4d | %(message)s
-INFO | logger_example.py: 72   | This is production data, also saved to log.txt
-WARNING | logger_example.py: 73   | This is used, when something is missing, but program still can work
-ERROR | logger_example.py: 74   | Used inside except blocks together with error objects, contains information about the error
-CRITICAL | logger_example.py: 75   | Notifies that the program ran into shutdown and couldn't work anymore sys.exit(1) signal. Worst case
