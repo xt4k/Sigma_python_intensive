@@ -8,7 +8,7 @@ import logging
 
 def external_logger_function_example(file_name="my_pytest.log"):
     LOG_FILE_NAME = file_name
-    DEFAULT_LOG_LEVEL = logging.DEBUG
+    DEFAULT_LOG_LEVEL = logging.INFO
     DEFAULT_LOG_FORMAT = "%(asctime)s %(levelname)s | %(filename)-15s: %(lineno)-4d | %(message)s"
     logging.basicConfig(filename=LOG_FILE_NAME, level=DEFAULT_LOG_LEVEL, filemode='w', format=DEFAULT_LOG_FORMAT)
 

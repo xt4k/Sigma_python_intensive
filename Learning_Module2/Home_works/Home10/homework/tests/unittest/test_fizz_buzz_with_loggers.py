@@ -4,9 +4,35 @@ Testsets for fizz_buzz: pure_division() and analysis()
 
 import unittest
 from Home_works_common.FizBuzz_testing_logging_doctest.fizz_buzz import pure_division,analysis
+import sys
+import logging
+
+
+def internal_logger_function_example(filename="my_pytest.log"):
+
+    LOG_FILE_NAME = filename
+
+    DEFAULT_LOG_LEVEL = logging.INFO
+
+    DEFAULT_LOG_FORMAT = "%(asctime)s %(levelname)s | %(filename)-15s: %(lineno)-4d | %(message)s"
+    logging.basicConfig(filename=LOG_FILE_NAME, level=DEFAULT_LOG_LEVEL, filemode='w', format=DEFAULT_LOG_FORMAT)
+
+    logger = logging.getLogger()
+
+    console_handler = logging.StreamHandler(sys.stdout)
+    console_handler.setLevel(DEFAULT_LOG_LEVEL)
+    console_handler.setFormatter(logging.Formatter(DEFAULT_LOG_FORMAT))
+
+    logger.addHandler(console_handler)
+
+    return logger
+
+logger = internal_logger_function_example("log-32.log")
+
 
 fizz = "Fizz"
 buzz = "Buzz"
+logger.debug("begin logging ")
 
 class FizzBuzzTests(unittest.TestCase):
     '''
@@ -30,12 +56,14 @@ class FizzBuzzTests(unittest.TestCase):
         testcase_1: 12 divided to 3 without left -> true
         '''
         result = pure_division(12, 3)
+        logger.info("logged result is `{}`.".format(result))
         self.assertTrue(result, "Should return `True` but: " + str(result))
 
     def test_divided_false(self):
         '''
         testcase_2: 12 divided to 5 without left -> false
         '''
+        logger.info("begin logging ")
         result = pure_division(12, 5)
         self.assertFalse(result, "Should return `False` but: "  + str(result))
 
@@ -150,3 +178,4 @@ class FizzBuzzTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+    logger.info("begin logging 3 ")
