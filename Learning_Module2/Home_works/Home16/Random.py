@@ -25,7 +25,7 @@ import math as mt
 import matplotlib.pyplot as plt
 import numpy as np
 
-from Learning_Module2.Home_works.Home08.Model import Model
+from Learning_Module2.Home_works.Home16.Model import Model
 from Learning_Module2.Lections.Lesson_20_8.Statistical_learning import Stat_characteristics_in
 
 
